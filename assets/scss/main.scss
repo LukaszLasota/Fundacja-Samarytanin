@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: "Didot";
+    src: url("../font/Didot Regular.ttf");
+    }
+@import 'variables+mixin';
+@import 'body';
+@import 'menu';
+@import 'content';
+@import 'about';
+@import 'services';
+@import 'contact';
+@import 'footer';
+@import 'page-services';
+@import 'mobile-section-main';
+@import 'page-services-mobile';

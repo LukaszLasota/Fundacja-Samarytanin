@@ -1,12 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        
+        <title>{% block title %}Fundacja Samarytanin{% endblock %}</title>
+        
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/logo/logo.png" type="image/x-icon" />
+        
+        
+        {% block stylesheets %}
+            {# 'app' must match the first argument to addEntry() in webpack.config.js #}
+            {{ encore_entry_link_tags('app') }}
+
+            <!-- Renders a link tag (if your module requires any CSS)
+                 <link rel="stylesheet" href="/build/app.css"> -->
+        {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+    {% block body %}
+         
+         
+    {% endblock %}
+       
+        <div class="footer">
+            {% block footer %}
+            <div class="footer-container">
+                <div class="footer-one">
+                    <h3 class="footer-h3">MENU</h3>
+                    <p class=""> <a href="/o-nas">o nas</a></p>
+                    <p class=""> <a href="/uslugi">usługi</a></p>
+                    <p class=""> <a href="/statut">statut</a></p>
+                    <p class=""> <a href="/kontakt">kontakt</a></p>
+                </div> 
+                <div class="footer-two">
+                    <h3 class="footer-h3">Kontakt</h3>
+                    <p class=""> Ul.Przemysłowa 2</p>
+                    <p class="">39-300 Mielec</p>
+                    <p class="">Czynne pon.-pt.</p>
+                    <p class=""> <a href="mailto:fundacja.samarytanin2020@wp.pl">fundacja.samarytanin2020@wp.pl</a></p>
+                </div>
+            </div>
+                {# &copy; Copyright 2011 by <a href="http://domain.invalid/">you</a>. #}
+            {% endblock %}
+        </div>
+         {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+
+            <!-- Renders app.js & a webpack runtime.js file
+                <script src="/build/runtime.js"></script>
+                <script src="/build/app.js"></script> -->
+        {% endblock %}
     </body>
 </html>

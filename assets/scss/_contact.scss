@@ -1,0 +1,74 @@
+
+.contact{
+    position: relative;
+    background-color: $contact-color;
+    height: 115vh;
+    @include flex;
+    @include center;
+    .contact-space{
+        @include position(absolute, 10%, auto, 12%, auto);
+        width: 50%;
+        background-color: $body-color;
+    }
+    &-img{
+        width: 56%;
+        @include position(absolute, 22%, -28%, auto, auto);
+    }
+    &-text{
+        @include position(absolute, 22%, auto, auto, auto);
+        width: 100%;
+        @include flex;
+        @include start;
+        padding-left: 10%;
+        
+    }
+    .contact-text-one{
+        @include flex;
+        @include center;
+        width: 100%;
+        padding: 2px 15px 2px 0;
+        img{
+            width: 9%;
+        }
+    }
+    .contact-paragraph{
+        width: 90%;
+        @include flex;
+        @include center;
+        p{
+            width: 100%;
+            font-size: 1.2rem;
+            font-weight: $font-weight-paragraph;
+            margin: 5px 10px;
+        }
+    }
+
+    .text-one-last{
+        padding-bottom: 25px;
+    }
+    .main-h2{
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1025px){
+    .contact{
+        .contact-paragraph{
+            p{
+                font-size: 1.1rem;
+            }
+        }
+        .contact-space{
+            @include position(absolute, 10%, auto, 12%, auto);
+            width: 60%;
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .contact{
+        display: none;
+    }
+}

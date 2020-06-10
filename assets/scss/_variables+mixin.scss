@@ -1,0 +1,39 @@
+$light: #ffffff;
+$body-color: #fffdf8;
+$button-color: #253028;
+$contact-color: #ddc6b4;
+
+$font-size-paragraph: 1.5rem;
+$font-size-paragraph-large: 1.2rem;
+$font-size-paragraph-s-large: 1.1rem;
+
+
+$font-weight-paragraph: normal;
+$letter-spacing-paragraph: 2px;
+
+$mobile-h2: 1.5rem;
+$mobile-paragraph: 1.1rem;
+
+
+@mixin flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin center{
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin start{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin position($type, $top, $right, $bottom, $left){
+    position: $type;
+    top: $top;
+    right: $right; 
+    bottom: $bottom;
+    left: $left;
+}

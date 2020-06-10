@@ -1,0 +1,130 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+<header>
+
+ {# {% include "components/menu.html.twig" %} #}
+
+
+<section class="content-header">
+    
+    <div class="content-header-one">
+        <div class="content-header-absolute">
+            <img class="content-header-image" src="/img/kontakt/5.jpg" alt="">
+            <h2 class="content-header-h2 black">kontakt</h2>
+        </div>
+    </div>
+
+    <div class="content-header-two">
+        <img src="/img/glowna-strona/2.jpg" alt="">
+        <div class="content-header-space"></div>
+    </div>
+    <div class="content-header-padding"></div>
+</section>
+<section class="content-mobile-subpage">
+        <div class="one">
+            <div class="one-text">
+                <h2 class="one-h2">{{controller_name}}</h2>
+            </div>
+        </div>
+        <div class="two">
+            <img class="" src="/img/glowna-strona/2.jpg" alt="">
+            <img class="image-main" src="/img/kontakt/6.jpg" alt="">
+        </div>
+    </section>
+
+</header>
+
+<main>
+
+<section class="contact-page">
+
+    <div class="contact-page-one">
+
+        <h3 class="contact-page-h3">adres</h3>
+
+        <div class="contact-page-text">  
+            <img class="" src="/img/kontakt/1.png" alt="">
+            <div class="contact-paragraph">  
+                <p class="">Ul.Przemysłowa 2</p>
+                <p class="">39-300 Mielec</p>
+            </div> 
+        </div> 
+        
+        <div class="contact-page-text">  
+            <img class="" src="/img/kontakt/2.png" alt="">
+            <div class="contact-paragraph">
+                <p class="">Czynne pon.-pt.</p>
+                <p class="">W godzinach 18:00-20.00</p>
+            </div>    
+        </div>
+
+        <div class="contact-page-text">  
+            <img class="" src="" alt=""> 
+            <div class="contact-paragraph">
+                <p class="">NIP :817 219 5778</p>
+                <p class="">Regon :38537076700000</p>
+            </div>    
+        </div>
+        
+    </div>
+
+    <div class="contact-page-one">
+        
+        <h3 class="contact-page-h3">KONTAKT</h3>
+
+        <div class="contact-page-text">  
+            <img class="" src="/img/kontakt/3.png" alt="">
+            <div class="contact-paragraph"> 
+                <p class="">577 771 586</p>
+                <p class="">788 620 732</p>
+            </div>
+        </div>
+
+ 
+
+        <div class="contact-page-text">  
+            <img class="" src="/img/kontakt/4.png" alt="">
+            <div class="contact-paragraph">
+                <p class="">fundacja.samarytanin2020@wp.pl</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-page-one">
+
+        <h3 class="contact-page-h3">PRZELEW</h3>
+
+        <div class="contact-page-text">  
+            <img class="" src="/img/kontakt/5.png" alt="">
+            <div class="contact-paragraph"> 
+                <p class="">Darowizny na cele statutowe.</p>
+            </div>
+        </div>
+
+        <div class="contact-page-text">  
+            <img class="" src="/img/kontakt/6.png" alt="">
+            <div class="contact-paragraph"> 
+                <p class="">BNP PARIBAS</p>
+                <p class="">45 1600 1462 1897 4044 0000 0001</p>
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+    <div class="padding-contact"></div>
+    
+    {# <div>
+        <ul>
+    {% for post in posts %}
+       <li> {{post.postOne}} </li>
+    {% endfor %}
+    </ul>
+        </div> #}
+</main>
+
+
+{% endblock %}
