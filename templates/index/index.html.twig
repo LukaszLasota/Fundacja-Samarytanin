@@ -1,13 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Fundacja Samarytanin{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
 
- <header>
-            <div class="menu">
-                
-                
+ <header id="four">
+
 <nav class="main-nav">
         
         <h1 class="logo" title="Fundacja Samarytanin">
@@ -25,13 +23,13 @@
         
         <div class="navigation">
             <ul class="navigation-list">
-                <li class="navigation-item"><a href="/o-nas">O nas</a></li>
-                <li class="navigation-item"><a href="/uslugi">Usługi</a></li>
-                <li class="navigation-item"><a href="/statut">statut</a></li>
-                <li class="navigation-item"><a href="/kontakt">kontakt</a></li>
+                 {% for item in menu %}
+                     <li class="navigation-item"><a href="{{item.href }}">{{item.name}}</a></li>
+                 {% endfor %}
             </ul>
         </div>
-      </nav>
+        <div class="scrollup"><a href="#four"><img src="/img/glowna-strona/8.png" alt=""></a></div>
+</nav>
 
    
    <section class="content">
@@ -54,7 +52,8 @@
      </header>
     <main>
     
-    <section class="about">
+<article id="one">
+    <section class="about" >
         <img class="" src="/img/glowna-strona/3.jpg" alt="">
         <div class="about-one">
             <div class="about-one-white">
@@ -87,7 +86,9 @@
             </div>
             <div class="mobile-bg"></div>
     </section>
+</article>
 
+<article id="two">
     <section class="services">
         <img class="services-img" src="/img/glowna-strona/5.jpg" alt="">
         <div class="service-center">
@@ -116,8 +117,10 @@
             </div>
             <div class="mobile-bg"></div>
     </section>
+</article>
 
-    <section class="contact">       
+<article id="three">
+    <section class="contact" >       
         <div class="contact-space">
             <img class="contact-img" src="/img/glowna-strona/6.jpg" alt="">
             <div class="contact-text">
@@ -206,13 +209,8 @@
             </div>
             <div class="mobile-bg"></div>
     </section>
-    
+</article> 
+
 </main>
-{# <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}</h1>
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/lukasz/Projects/Samarytanin/src/Controller/IndexController.php'|file_link(0) }}">src/Controller/IndexController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/lukasz/Projects/Samarytanin/templates/index/index.html.twig'|file_link(0) }}">templates/index/index.html.twig</a></code></li>
-    </ul>
-</div> #}
+
 {% endblock %}

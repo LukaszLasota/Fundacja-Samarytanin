@@ -3,7 +3,9 @@
 {% block title %}{% endblock %}
 
 {% block body %}
-<header>
+<header id="four">
+
+{% include "components/menu.html.twig" %}
 
 <section class="content-header">
     
@@ -20,6 +22,19 @@
     </div>
     <div class="content-header-padding"></div>
 </section>
+
+<section class="content-mobile-subpage">
+        <div class="one">
+            <div class="one-text">
+                <h2 class="one-h2">{{controller_name}}</h2>
+            </div>
+        </div>
+        <div class="two">
+            <img class="" src="/img/glowna-strona/2.jpg" alt="">
+            <img class="image-main" src="/img/statut/2.jpg" alt="">
+        </div>
+    </section>
+</header>
 
 </header>
 <main>

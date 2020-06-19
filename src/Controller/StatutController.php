@@ -13,7 +13,7 @@ class StatutController extends AbstractController
     public function index()
     {
         return $this->render('statut/index.html.twig', [
-            'controller_name' => 'StatutController',
+            'controller_name' => 'Statut',
         ]);
     }
 }

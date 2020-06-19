@@ -14,6 +14,25 @@ class IndexController extends AbstractController
     {
         return $this->render('index/index.html.twig', [
             'controller_name' => 'Samarytanin',
-        ]);
+            'menu' => [
+                [
+                'href' => '#one',
+                'name' => 'O NAS',
+                ],
+                [
+                'href' => '#two',
+                'name' => 'usługi',
+                ],
+                [
+                'href' => '/statut',
+                'name' => 'statut',
+                ],
+                [
+                'href' => '#three',
+                'name' => 'kontakt',
+                ]
+                ]
+            ]
+        );
     }
 }
