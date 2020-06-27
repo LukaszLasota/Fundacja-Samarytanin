@@ -62,14 +62,14 @@
 
 // Contact page mobile
 .contact-page{
-    // background-color: $contact-color;
+    
     background-image:
     linear-gradient(
       to right, 
-      $body-color 12%,
-      $contact-color 12%,
-      $contact-color 35%,
-      $body-color 35%
+      $body-color 15%,
+      $contact-color 15%,
+      $contact-color 29%,
+      $body-color 29%
     );
     padding: 20px 0 30px;
     &-one{

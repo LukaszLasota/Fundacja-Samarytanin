@@ -72,12 +72,12 @@
     h3{
         font-size: 1.9rem;
         font-weight: normal;
-        // font-weight: $font-weight-paragraph;
+        font-weight: $font-weight-paragraph;
         letter-spacing: $letter-spacing-paragraph;
     }
     p{
         font-size: 1.5rem;
-        font-weight: normal;
+        font-weight: $font-weight-paragraph;
         letter-spacing: 1px;
         margin: 3px;
     }
@@ -242,7 +242,7 @@
         padding: 200px 0 300px;
         p{
             font-size: 1.5rem;
-            font-weight: normal;
+            font-weight: $font-weight-paragraph;
             letter-spacing: 1px;
             margin: 6px;
             text-align: center;
@@ -308,7 +308,20 @@
 // Statut page content
 
 .statut-page-head{
-    padding: 170px 0;
-    background-color: $contact-color;
+    padding: 100px 0 200px;
+    // background-color: $contact-color;
+    background-image:
+    linear-gradient(
+      to bottom, 
+      $body-color 0%,
+      $contact-color 0%,
+      $contact-color 30%,
+      $body-color 30%
+    );
 }
 
+#example1{    
+    height: 75vh;
+    width: 50%;
+    margin: 0 auto;
+}

@@ -11,13 +11,13 @@
     
     <div class="content-header-one">
         <div class="content-header-absolute">
-            <img class="content-header-image" src="/img/statut/1.jpg" alt="">
+            <img class="content-header-image" src="/img/statut/1.jpg" alt="Ręce starszej osoby">
             <h2 class="content-header-h2">statut</h2>
         </div>
     </div>
 
     <div class="content-header-two">
-        <img src="/img/glowna-strona/2.jpg" alt="">
+        <img src="/img/glowna-strona/2.jpg" alt="Tło z częścią loga fundacji">
         <div class="content-header-space"></div>
     </div>
     <div class="content-header-padding"></div>
@@ -30,8 +30,8 @@
             </div>
         </div>
         <div class="two">
-            <img class="" src="/img/glowna-strona/2.jpg" alt="">
-            <img class="image-main" src="/img/statut/2.jpg" alt="">
+            <img class="" src="/img/glowna-strona/2.jpg" alt="Tło z częścią loga fundacji">
+            <img class="image-main" src="/img/statut/2.jpg" alt="Ręce starszej osoby">
         </div>
     </section>
 </header>
@@ -40,13 +40,18 @@
 <main>
 
 <section class="statut-page">
-<div class="statut-page-head"></div>
 
-
-
-
+<div class="statut-page-head">
+    <div id="example1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
+        <script>PDFObject.embed("/pdf/statut.pdf", "#example1");
+    </script>
+    </div> 
+</div>   
+    
 
 </section>
 
 </main>
 {% endblock %}
+

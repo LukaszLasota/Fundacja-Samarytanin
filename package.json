@@ -19,13 +19,11 @@
     },
     "dependencies": {
         "jquery": "^3.5.1",
-        "normalize.css": "^8.0.1"
+        "normalize.css": "^8.0.1",
+        "pdfobject": "^2.1.1"
     },
-    "browserslist": 
-    [
+    "browserslist": [
         "> 0.2%",
-        "last 4 versions",
-        "Firefox ESR"
+        "last 4 versions"
     ]
-        
 }
