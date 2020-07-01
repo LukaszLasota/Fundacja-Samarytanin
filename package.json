@@ -20,10 +20,10 @@
     "dependencies": {
         "jquery": "^3.5.1",
         "normalize.css": "^8.0.1",
-        "pdfobject": "^2.1.1"
+        "pdf.js": "^0.1.0"
     },
     "browserslist": [
-        "> 0.2%",
-        "last 4 versions"
+        "> 0.1%",
+        "last 5 versions"
     ]
 }

@@ -31,8 +31,10 @@ DirectoryIndex index.php
     RewriteRule .* - [E=BASE:%1]
 
     # Sets the HTTPS_AUTHORIZATION header removed by Apache
-    RewriteCond %{HTTPS:Authorization} .+
-    RewriteRule ^ - [E=HTTPS_AUTHORIZATION:%0]
+    RewriteEngine On
+    RewriteCond %{SERVER_PORT} 80
+    RewriteRule ^(.*)$ https://www.fundacja-samarytanin.pl [R,L]
+
 
     # Redirect to URI without front controller to prevent duplicate content
     # (with and without `/index.php`). Only do this redirect on the initial

@@ -26,6 +26,7 @@
                     font-size: 1.3rem;
                     margin: 5px;
                     text-align: center;
+                    font-weight: $font-weight-paragraph;
                 }
             }
         .mobile-bg{
@@ -69,6 +70,7 @@
                     font-size: 1.3rem;
                     margin: 5px;
                     text-align: center;
+                    font-weight: $font-weight-paragraph;
                 }
             }
         .mobile-bg{
@@ -115,7 +117,7 @@
                 p{
                     width: 100%;
                     font-size: 1.1rem;
-                    font-weight: bold;
+                    font-weight: $font-weight-paragraph;
                     margin: 5px 10px;
                 }
             }
