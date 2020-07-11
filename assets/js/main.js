@@ -21,8 +21,6 @@ hamburger.addEventListener('click', handleClick);
 
 //Add background-color to menu
 
-
-
 function addClassOnScroll() {
   mainNav.classList.add("main-nav-bg");
 }

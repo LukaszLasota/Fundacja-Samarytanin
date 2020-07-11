@@ -79,8 +79,12 @@
     }
     &-text{
         padding: 5px 15px 5px 0;
-        img{
+        .contact-image-small{
             width: 10%;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
     }
     .contact-paragraph{
@@ -163,7 +167,6 @@
         width: 90%;
         font-size: 1.2rem;
     }
-    
 }
 .service-page-text{
     width: 90%;
@@ -194,12 +197,17 @@
         width: 100%;
     }
     &-text{
-        padding: 10px 0px 10px 5px;
-        img{
+        padding: 10px 0px 10px 5px;;
+        .contact-image-small{
             width: 15%;
-            margin: 5px;
+            padding: 5px;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
     }
+
     .contact-paragraph{
         width: 80%;
         p{

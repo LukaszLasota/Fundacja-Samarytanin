@@ -123,8 +123,12 @@
         @include center;
         width: 100%;
         padding: 10px 15px 10px 0;
-        img{
+        .contact-image-small{
             width: 15%;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
     }
     .contact-paragraph{
@@ -328,8 +332,8 @@
         font-size: 1.6rem;
     }
     .more{
-        margin: 30px 15px 30px 0;
         font-weight: bold;
+        padding: 20px 40px;
     }
 }
 
@@ -338,25 +342,27 @@
     direction: ltr;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 70px;
   }
 
   #prev, #next{
      width: 50px;
      padding: 0;
      border: none;
+     cursor: pointer;
      img{
          width: 100%;
      }
   }
 
   #prev{
-    @include position(absolute, 45%, auto, auto, auto);
-    transform: translateX(-50%);
+    @include position(absolute, 50%, auto, auto, auto);
+    transform: translate(-50%, -50%);
   }
 
   #next{
-    @include position(absolute, 45%, auto, auto, 100%);
-     transform: translateX(-50%) rotate(180deg);
+    @include position(absolute, 50%, auto, auto, 100%);
+     transform: translate(-50%, -50%) rotate(180deg);
   }
 
   @media (max-width: 1600px){

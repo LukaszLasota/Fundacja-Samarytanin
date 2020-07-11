@@ -1,6 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
 
 {% block body %}
 
@@ -10,7 +9,7 @@
         
         <h1 class="logo" title="Fundacja Samarytanin">
           <a href="/">
-            <img src="/img/logo/logo.png" alt="Logo fundacji Samarytanin">
+            <img src="/img/logo/logo.png" alt="Strona główna fundacji Samarytanin">
           </a>
         </h1>
 
@@ -28,7 +27,7 @@
                  {% endfor %}
             </ul>
         </div>
-        <div class="scrollup"><a href="#four"><img src="/img/glowna-strona/8.png" alt="Strzałka w górę"></a></div>
+        <div class="scrollup"><a href="#four"><img src="/img/glowna-strona/8.png" alt="Powrót na górę strony"></a></div>
 </nav>
 
    
@@ -36,11 +35,15 @@
         <div class="one">
             <div class="one-text">
                 <div class="color-bg">
-                    <h3 class="one-h3">ten, który</h3>
-                    <h3 class="one-h3">Mu okazał</h3>
-                    <h3 class="one-h3">Miłosierdzie</h3>
+                    <blockquote cite="https://biblia.deon.pl/rozdzial.php?id=316">
+                        <p class="one-blockquote">ten, który</p>
+                        <p class="one-blockquote">Mu okazał</p>
+                        <p class="one-blockquote">Miłosierdzie</p>
+                    </blockquote>
                 </div>
-                <h3 class="one-h3 color-txt">ŁK. 10:37</h3>
+                <blockquote cite="https://biblia.deon.pl/rozdzial.php?id=316">
+                    <p class="one-blockquote color-txt">ŁK. 10:37</p>
+                </blockquote> 
             </div>
         </div>
         <div class="two">
@@ -68,7 +71,7 @@
                         <p class="">Naszym celem jako fundacji jest pomaganie najsłabszym, ludziom chorym, potrzebującym wsparcia i opieki.</p>
                         <p class="">Opieką nad osobami starszymi zajmuję się od ...</p>
                      </div>
-                    <button class="more"><a href="/o-nas">Więcej</a></button>
+                    <a class="more" href="/o-nas">Więcej</a>
                 </div>
             </div>
         </div>
@@ -82,7 +85,7 @@
                         <p class="">Naszym celem jako fundacji jest pomaganie najsłabszym, ludziom chorym, potrzebującym wsparcia i opieki.</p>
                         <p class="">Opieką nad osobami starszymi zajmuję się od ...</p>
                      </div>
-                    <button class="more"><a href="/o-nas">Więcej</a></button>
+                    <a href="/o-nas" class="more">Więcej</a>
             </div>
             <div class="mobile-bg"></div>
     </section>
@@ -99,7 +102,7 @@
                     <p class="service-paragraph">Usługi są świadczone w domu podopiecznego.</button>
                     <p class="service-paragraph">Opieka obejmuje ...
                 </div>
-                <button class="more"><a href="/uslugi">Więcej</a></button>
+                <a href="/uslugi" class="more">Więcej</a>
             </div>
         </div>
     </section>
@@ -113,7 +116,7 @@
                         <p>Usługi są świadczone w domu podopiecznego.</p>
                         <p>Opieka obejmuje ...</p>
                      </div>
-                    <button class="more"><a href="/uslugi">Więcej</a></button>
+                     <a href="/uslugi" class="more">Więcej</a>
             </div>
             <div class="mobile-bg"></div>
     </section>
@@ -126,26 +129,34 @@
             <div class="contact-text">
                 <img class="contact-img" src="/img/glowna-strona/6.jpg" alt="Koperty na listy">
                 <h2 class="main-h2">Kontakt</h2>
-                <img src="/img/kontakt/10.png" alt="Pinezka lokalizacji">
+                <div class="contact-image-small">
+                    <img class="" src="/img/kontakt/10.png" alt="">
+                </div>
                 <div class="contact-paragraph">  
                     <p class="">Ul.Przemysłowa 2</p>
                     <p class="">39-300 Mielec</p>
                 </div> 
-                <img class="" src="/img/kontakt/11.png" alt="Telefon">
+                <div class="contact-image-small">
+                    <img class="" src="/img/kontakt/11.png" alt="">
+                </div>
                 <div class="contact-paragraph"> 
                     <p class="">577 771 586</p>
                     <p class="">788 620 732</p>
                 </div>
-                <img class="" src="/img/kontakt/12.png" alt="Zegar">
+                <div class="contact-image-small">
+                    <img class="" src="/img/kontakt/12.png" alt="">
+                </div>
                 <div class="contact-paragraph">
                     <p class="">Czynne pon.-pt.</p>
                     <p class="">W godzinach 18:00-20.00</p>
                 </div>
-                <img class="" src="/img/kontakt/13.png" alt="Koperta">
+                <div class="contact-image-small">
+                    <img class="" src="/img/kontakt/13.png" alt="">
+                </div>
                 <div class="contact-paragraph">
                     <p class="">fundacja.samarytanin2020@wp.pl</p>
                 </div>
-                <button class="more"><a href="kontakt">Więcej</a></button>
+                <a href="kontakt" class="more">Więcej</a>
             </div>
 
         </div>     
@@ -158,7 +169,9 @@
                 <h2 class="main-h2">Kontakt</h2>
         
                 <div class="contact-text-one">  
-                    <img class="" src="/img/kontakt/10.png" alt="Pinezka lokalizacji">
+                    <div class="contact-image-small">
+                        <img class="" src="/img/kontakt/10.png" alt="">
+                    </div>
                     <div class="contact-paragraph">  
                         <p class="">Ul.Przemysłowa 2</p>
                         <p class="">39-300 Mielec</p>
@@ -166,7 +179,9 @@
                 </div> 
                 
                 <div class="contact-text-one">  
-                    <img class="" src="/img/kontakt/11.png" alt="Telefon">
+                    <div class="contact-image-small">
+                        <img class="" src="/img/kontakt/11.png" alt="">
+                    </div>
                     <div class="contact-paragraph"> 
                         <p class="">577 771 586</p>
                         <p class="">788 620 732</p>
@@ -174,7 +189,9 @@
                 </div> 
                 
                 <div class="contact-text-one">  
-                    <img class="" src="/img/kontakt/12.png" alt="Zegar">
+                    <div class="contact-image-small">
+                        <img class="" src="/img/kontakt/12.png" alt="">
+                    </div>
                     <div class="contact-paragraph">
                         <p class="">Czynne pon.-pt.</p>
                         <p class="">W godzinach 18:00-20.00</p>
@@ -182,16 +199,15 @@
                 </div>
                 
                 <div class="contact-text-one text-one-last">  
-                    <img class="" src="/img/kontakt/13.png" alt="Koperta">
+                    <div class="contact-image-small">
+                        <img class="" src="/img/kontakt/13.png" alt="">
+                    </div>
                     <div class="contact-paragraph">
                         <p class="small-contact">fundacja.samarytanin2020 @wp.pl</p>
                         <p class="medium-contact">fundacja.samarytanin2020@wp.pl</p>
                     </div>
                 </div>
-
-                <button class="more"><a href="kontakt">Więcej</a></button>
-            
-
+                <a href="kontakt" class="more">Więcej</a>
             </div>
             <div class="mobile-bg"></div>
     </section>

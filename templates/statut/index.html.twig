@@ -47,20 +47,15 @@
 
 <div class="center-pdf">
   
-  <button id="prev" ><img src="/img/statut/3.jpg" alt=""></button>
-  <button id="next"><img src="/img/statut/3.jpg" alt=""></button>
+  <button id="prev" ><img src="/img/statut/3.jpg" alt="Poprzednia strona" title="Poprzednia strona"></button>
+  <button id="next"><img src="/img/statut/3.jpg" alt="Następna strona" title="Następna strona"></button>
   &nbsp; &nbsp;
-  <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+  <span>Page: <span id="page_num"></span> z <span id="page_count"></span></span>
 
 <canvas id="the-canvas"></canvas>
 
-<button class="more"><a href="/pdf/statut.pdf">POBIERZ STATUT</a></button>
+<a class="more" href="/pdf/statut.pdf">POBIERZ STATUT</a>
         
-    {# <div id="example1">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
-        <script>PDFObject.embed("/pdf/statut.pdf", "#example1");
-    </script>
-    </div>  #}
 </div>   
 
 </div>
@@ -75,3 +70,10 @@
 </main>
 {% endblock %}
 
+{% block javascripts %}
+    {{ encore_entry_script_tags('statut') }}
+
+    <!-- Renders app.js & a webpack runtime.js file
+    <script src="/build/runtime.js"></script>
+    <script src="/build/app.js"></script> -->
+{% endblock %}

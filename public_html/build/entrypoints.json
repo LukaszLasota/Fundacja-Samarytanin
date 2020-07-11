@@ -3,10 +3,19 @@
     "app": {
       "js": [
         "/build/runtime.518d4a5c.js",
-        "/build/app.0d466c0a.js"
+        "/build/app.9b974b69.js"
       ],
       "css": [
-        "/build/app.3ebb3608.css"
+        "/build/app.606e51bd.css"
+      ]
+    },
+    "statut": {
+      "js": [
+        "/build/runtime.518d4a5c.js",
+        "/build/statut.ea4a1296.js"
+      ],
+      "css": [
+        "/build/statut.606e51bd.css"
       ]
     }
   }
