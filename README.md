@@ -4,10 +4,17 @@ Website for foundation build in symfony and encore
 ===
 
 ## Table of contents
+* [ Live version](#Live-version)
 * [Local setup](#Local-setup)
 * [Production-build](#Production-build)
 * [Change to local](#Change-to-local)
 * [Technologies](#technologies)
+
+## Live version
+```
+Live version of the page: https://www.fundacja-samarytanin.pl
+```
+- 
 
 ## Local-setup
 - `composer install`
