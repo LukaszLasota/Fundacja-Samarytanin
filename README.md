@@ -11,10 +11,9 @@ Website for foundation build in symfony and encore
 * [Technologies](#technologies)
 
 ## Live version
-```
+
 Live version of the page: https://www.fundacja-samarytanin.pl
-```
-- 
+
 
 ## Local-setup
 - `composer install`
